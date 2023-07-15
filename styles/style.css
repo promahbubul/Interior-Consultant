@@ -1,0 +1,367 @@
+/* ============================
+                Import Fonts
+============================ */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap");
+
+/* font-family: 'Crimson Pro', serif; */
+/* font-family: 'Lora', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+/* ============================
+                Default Style
+============================ */
+
+:root {
+  --primaryColor: #181719;
+  --secondaryColor: #828282;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+/* ============================
+                Nav Section
+============================ */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+.nev_left {
+  width: 50%;
+}
+.nev_left span {
+  font-family: Crimson Pro;
+  font-size: 0.9rem;
+  font-weight: 200;
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.nev_right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.nevlink {
+  font-family: "Montserrat";
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nevlink {
+}
+.nevlink:hover {
+  border-bottom: 2.5px solid white;
+  padding-bottom: 5px;
+}
+.active {
+  border-bottom: 2.5px solid white;
+  padding-bottom: 5px;
+}
+
+/* ============================
+                Main Style
+============================ */
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 94%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+.main_left {
+  width: 42%;
+}
+.main_left h1 {
+  font-family: Lora;
+  font-size: 3.5rem;
+  font-weight: 500;
+  width: 95%;
+  margin-bottom: 2.5rem;
+}
+.main_left p {
+  font-family: Montserrat;
+  width: 450px;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.button_group {
+  display: flex;
+  align-items: center;
+}
+.button_group button {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  background: none;
+  color: #fff;
+  border: 0px;
+}
+.button_group img {
+  width: 25px;
+  filter: invert(1);
+  height: 20px;
+}
+
+.main_right {
+  display: flex;
+  width: 58%;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.main_right_top {
+  width: 100%;
+}
+.main_right_top img {
+  width: 100%;
+}
+.main_right_bottom {
+  cursor: pointer;
+  padding: 25px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background: #181719;
+  margin-top: -100px;
+  box-sizing: border-box;
+  margin-right: 27px;
+  box-shadow: 0px 3px 3px 0px black;
+}
+
+.profile {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 25px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile_photo {
+  margin-right: 20px;
+}
+.profile_photo img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.profile_name {
+}
+.profile_name h3 {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 300;
+}
+.profile_name p {
+  color: #828282;
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 2;
+}
+
+.profile_info {
+}
+.profile_info h3 {
+  font-family: "LORA";
+  font-size: 25px;
+  font-weight: 700;
+}
+
+/* ============================
+                Footer Section
+============================ */
+.footer {
+  text-align: center;
+  color: #a9a9a9;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+.footer span {
+}
+
+/* Media Query */
+
+/* ============================
+                 Media Query 
+============================ */
+
+@media (max-width: 768px) {
+  .nev_right {
+    display: none;
+  }
+  .mobile_menu {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    height: 40px;
+    /* border: 2px solid #fff; */
+  }
+
+  .hamberger_menu {
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .menu_line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .main_left h1 {
+    font-size: 2.1rem;
+  }
+  .main_left p {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+
+  .button_group button {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+
+  .main_right_bottom {
+    padding: 10px 15px 15px 15px;
+    width: 280px;
+    background: #181719;
+    margin: auto;
+    margin-top: -70px;
+  }
+  .profile_photo img {
+    width: 50px;
+  }
+
+  .profile_name h3 {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .profile_name p {
+    font-size: 12px;
+  }
+
+  .button_group img {
+    width: 15px;
+    filter: invert(1);
+    height: 15px;
+  }
+  .profile {
+    margin-bottom: 10px;
+  }
+  .profile_info h3 {
+    font-size: 16px;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav {
+    margin-bottom: 50px;
+  }
+
+  .main_left h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  .main_left p {
+    font-size: 1.5rem;
+    width: 75%;
+    margin-bottom: 35px;
+  }
+
+  .button_group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .button_group button {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .button_group img {
+    width: 35px;
+    filter: invert(1);
+    height: 20px;
+  }
+
+  .profile_info h3 {
+    font-size: 2.1rem;
+  }
+
+  .profile_name p {
+    font-size: 1rem;
+  }
+
+  .profile_name h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  .profile_photo img {
+    width: 5rem;
+  }
+
+  .profile_photo {
+    margin-right: 1rem;
+  }
+
+  .main_right_bottom {
+    padding: 2rem;
+    width: 80%;
+    background: #181719;
+    margin: auto;
+    margin-top: -70px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+  }
+
+  .main_left {
+    width: 100%;
+  }
+
+  .main_right {
+    width: 100%;
+  }
+}
